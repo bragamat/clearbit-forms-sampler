@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Clearbit Forms Solutions Sampler</title>
 
-You can use the [editor on GitHub](https://github.com/bragamat/clearbit-forms-sampler/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+  </head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <body>
+    <div>
+      <h1>Marketo Form</h1>
+      <script src="//app-ab32.marketo.com/js/forms2/js/forms2.js"></script>
+      <form id="mktoForm_1091"></form>
+      <script>MktoForms2.loadForm("https://app-ab32.marketo.com", "797-LZE-483", 1091);</script>
+    </div>
 
-### Markdown
+    <div>
+      <h1>HubSpot Form</h1>
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <!-- Clearbit X Test Portal 7436412 -->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+        region: "na1",
+        portalId: "7436412",
+        formId: "385219c9-15e2-4e05-8ced-f333ceb18120"
+      });
+      </script>
+      <!-- End Dev env hubspot form -->
+    </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <div>
+      <h1>Pardot Form</h1>
+      <!-- X Forms Team Testbed-->
+      <iframe src="https://go.demo.pardot.com/l/64792/2021-09-27/nd3z2" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+    </div>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bragamat/clearbit-forms-sampler/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+  </body>
+</html>
